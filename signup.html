@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title> Signup Page </title>
+
+  <meta name="description" content="Code Fair 2017">
+  <meta name="keywords" content="Events, About, Contact, Sign up">
+  <meta name="author" content="Prajwal, Swornim, Tom">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+</head>
+
+<body>
+  <div id="header" class="header">
+    <div class="headerimg">
+      <img src="logo.jpg" height="40%" width="10%" align="left">
+    </div>
+    <div id="login" class="logIn" align="right">
+      <font size="4">
+        <a href="loginpage.html">
+          <button type="button" align="right"><font size="4">User Login</font></button>
+        </a>
+      </font>
+    </div>
+
+    <div class="heading">
+      <h1 align="center"><font size="12">CODE FAIR 2017</font></h1>
+    </div>
+  </div>
+  <div class="navbar" id="navBar">
+    <nav class="nav" align="center">
+      <font size="6">
+        <a href="about.html">About</a> |
+        <a href="event.html">Event</a> |
+        <a href="pervious.html">Previous Work</a> |
+        <a href="contact.html">Contact</a> |
+        <a href="signup.html"> SignUp Page</a>
+      </font>
+      <form id="search" name="search" method="post" action="search.php" align="right">
+        <input type="text" name="search2" id="search2" />
+        <input type="submit" value="Search" />
+      </form>
+    </nav>
+  </div>
+  <div id="main" class="main">
+    <p>
+      <font size="4"> Please fill up the form to register you or your team into CODE FAIR 2017</font>
+    </P>
+    <fieldset>
+
+      <legend>Form to register for CODE FAIR 2017:</legend>
+      What is your team presenting in Code Fair 2017? :
+      <form action="/event_name.php" required>
+        <input type="radio" name="event1" value="a"> Coding
+        <input type="radio" name="event2" value="b"> Portfolio
+      </form>
+      <br>Team Name:<br>
+      <input type="text" name="teamname" required>
+      <br><br>Team email ID:<br>
+      <input type="text" name="email" required>
+      <br><br>Number of Team members:<br>
+      <form action="/team_number.php" required>
+        <input type="radio" name="number" value="1"> 1
+        <input type="radio" name="number" value="2"> 2
+        <input type="radio" name="number" value="3"> 3
+        <input type="radio" name="number" value="4"> 4
+      </form>
+      <br>Please enter all team members name:<br>
+      <input type="text" name="teammember1" required><br>
+      <input type="text" name="teammember2"><br>
+      <input type="text" name="teammember3"><br>
+      <input type="text" name="teammember4"><br>
+
+      <br> Create your password: <br>
+      <input type="password" name="logininpassword" required>
+      <p> <i>( Should have at least eight (8) characters and containing at least one special character) </i></p>
+      Conform your password: <br>
+      <input type="password" name="logininpassword" required>
+      <br><br>
+
+      <button type="button">Submit</button>
+      <button type="button"><a href="signup.html">Cancel</a></button><br>
+    </fieldset>
+    <div class="footer" id="footer">
+      <footer align="center">
+        <hr>
+        <p> © CopyRight are all reserved </P>
+      </footer>
+    </div>
+  </div>
+</body>
+
+</html>
